@@ -4,6 +4,8 @@ This component provides the current tariff of a given electricity operator
 
 Although this component can work alone, it was built as a complement to the [utility_meter component](https://github.com/dgomes/home-assistant-custom-components/tree/master/utility_meter). Integration between both is achieved through state sincronization using an automation.
 
+
+
 ## Configuration example
 
 ```yaml
@@ -24,3 +26,7 @@ automation:
         data_template:
           tariff: "{{ trigger.to_state.state }}" 
 ```
+
+## EDP Plans
+- Bi-horário - ciclo diário
+- Bi-horário - ciclo semanal
